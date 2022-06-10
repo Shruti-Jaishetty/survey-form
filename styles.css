@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins';
+}
+.container-fluid {
+    padding:auto 50px;
+    background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
+    color:#000;
+}
+#title {
+    text-align:center;
+    font-size:25px;
+    font-weight: 600;
+    padding:20px 10px 0 10px;
+
+}
+#description {
+    font-size:14px;
+    text-align:center;
+    font-weight: 500;
+}
+
+#survey-form {
+    display:flex;
+   flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-size:13px;
+    font-weight: 600;
+    padding:20px 30px;
+ 
+}
+
+ #name, #email, #number  {
+    width:320px;
+    height:40px;
+    border:none;
+   margin-top:8px;
+    outline:none;
+    background: #eee;
+    padding-left:20px;
+}
+
+#number,#dropdown, #msg {
+margin-top:8px;
+}
+
+
+
+#check , #radio-label {
+   margin-top:8px;
+  
+
+
+}
+#male, #female, #other {
+    padding-left:10px;
+  margin-top:8px;
+}
+
+
+#age, #branch {
+    padding-right:10px;
+  
+}
+#msg {
+    font-size:14px;
+    outline:none;
+    border:none;
+    width:320px;
+    background: #eee;
+}
+#dropdown {
+    outline:none;
+    border:none;
+    background: #eee;
+    font-size:13px;
+    width:180px;
+    height:40px;
+}
+#submit {
+    width:200px;
+    padding:10px 32px;
+    font-weight: 600;
+    background: #fff;
+    color:#000;
+  margin:30px 0;
+  border-radius:6px;
+    outline:none;
+    border:none;
+  
+}
+
+#submit:hover {
+    color:#fff;
+    background:rgba(5,84,94,1);
+    border:none;
+    transition: 1s;
+}

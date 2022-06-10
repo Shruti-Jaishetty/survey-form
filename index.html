@@ -1,0 +1,123 @@
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>A Survey Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+
+
+<div class="container-fluid">
+            <h1 id="title">FEEDBACK ON TRAINING</h1>
+            <p id="description">
+            This feedback is intended to see the effectiveness of training. 
+            </p>
+                <div class="container">
+                    <form id="survey-form">
+                      <table>
+                        <tr>
+                          <td>                                    <label id="name-label">Name</label></td>
+                          <td>
+                                    <input id="name" placeholder="FULL NAME" name="fname" type="text" required></td>
+                        </tr>
+                        
+                        <tr>
+                          <td>                       
+                                      <label id="email-label">Email ID</label></td>
+                          <td>        
+                                    <input id="email" placeholder="EMAIL ADDRESS" name="email" type="email" required></td>
+                        </tr>
+                     
+                        <tr>
+                             <td>                   
+           <label id="number-label">Phone Number</label></td>
+                        
+                         <td>
+                                    <input id="number" placeholder="PHONE NUMBER" name="phone" type="number"
+               min="7" max="10" required></td>
+                        </tr>
+                        
+                        <tr>
+                          <td><label id="age" for="age">ENTER THE AGE</label>
+                          </td>
+                          
+                           <td>
+                              
+                                        <input id="number" type="number" name="age" onsubmit="validate()">
+                                        <span id="op"></span> 
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                                      
+                         <label id="branch" for="branch">SELECT THE BRANCH</label>
+                          </td>
+                          
+                           <td>
+                             <select name="" id="dropdown">
+                                            <option value="Bangalore">Bangalore</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Chennai">Chennai</option>
+                                            <option value="Delhi">Delhi</option>
+                                          </select>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>                              
+                                          <span id="radio-label">GENDER</span></td>
+                          <td>
+                                       
+            
+                                        <input type="radio" id="male" name="gender" value="Male">
+                                        <label for="male">Male</label>
+                                        <input type="radio" id="female" name="gender" value="Female">
+                                        <label for="female">Female</label>
+                                            <input type="radio" id="other" name="gender" value="Other">
+                                        <label for="other">Other</label>
+                                       </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>                
+                         <span id="check">COURSE TAKEN</span></td>
+                           <td><input type="checkbox" id="java" name="java" value="java">
+                                        <label for="course">Java</label>
+                        
+                                        <input type="checkbox" id="web" name="web" value="web technologies">
+                                        <label for="course">IoT</label>
+                        
+                                        <input type="checkbox" id="python" name="python" value="python">
+                                        <label for="course">Python</label>
+            
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                             <label id="message">WOULD YOU LIKE TO ADD ANY OTHER COMMENTS ?</label>
+                          </td>
+                          
+                           <td>
+                                        <textarea class="form-control" id="msg" rows="3" placeholder="ENTER ADDITIONAL COMMENTS HERE"></textarea>
+                          </td>
+                        </tr>
+                        
+                        
+                      </table>
+      
+                        <div class="container text-center">
+                          <button id="submit">SUBMIT</button>
+                      </div>
+                    </form>
+       
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
